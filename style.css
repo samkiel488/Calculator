@@ -9,6 +9,10 @@ body {
     font-family: Courier new, Monospace; /* Changed to a more common font */
 }
 
+a {
+    color: wheat;
+}
+
 body::before {
     content: "";
     position: fixed;
@@ -106,8 +110,8 @@ form input.equal {
 }
 
 form input.operator {
-    color: #33ffd8;
-    background-color: ; 
+    color: black;
+    background-color: turquoise; 
 }
 
 footer {
