@@ -120,7 +120,8 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-    font-family: Brush Script MT , cursive;
+    font-family: 'Courier New', Courier, monospace;
+}
     padding-bottom: 10px;
     margin-bottom: -20px;
 }
