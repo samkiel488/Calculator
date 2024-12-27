@@ -25,33 +25,33 @@
                     <input type="text" name="display" readonly>
                 </div>
                 <div class="button-row">
-                    <input type="button" value="AC" onclick="display.value = ''" class="operator">
-                    <input type="button" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)" class="operator">
-                    <input type="button" value="." onclick="display.value += '.'" class="operator">
-                    <input type="button" value="/" onclick="display.value += '/'" class="operator">
+                    <input type="button" value="AC" onclick="clearDisplay(); vibrate();" class="operator">
+                    <input type="button" value="DEL" onclick="deleteLast(); vibrate();" class="operator">
+                    <input type="button" value="." onclick="addToDisplay('.'); vibrate();" class="operator">
+                    <input type="button" value="÷" onclick="addToDisplay('/'); vibrate();" class="operator"> <!-- Division sign changed -->
                 </div>
                 <div class="button-row">
-                    <input type="button" value="7" onclick="display.value += '7'">
-                    <input type="button" value="8" onclick="display.value += '8'">
-                    <input type="button" value="9" onclick="display.value += '9'">
-                    <input type="button" value="*" onclick="display.value += '*'" class="operator">
+                    <input type="button" value="7" onclick="addToDisplay('7'); vibrate();">
+                    <input type="button" value="8" onclick="addToDisplay('8'); vibrate();">
+                    <input type="button" value="9" onclick="addToDisplay('9'); vibrate();">
+                    <input type="button" value="×" onclick="addToDisplay('*'); vibrate();" class="operator"> <!-- Multiplication sign changed -->
                 </div>
                 <div class="button-row">
-                    <input type="button" value="4" onclick="display.value += '4'">
-                    <input type="button" value="5" onclick="display.value += '5'">
-                    <input type="button" value="6" onclick="display.value += '6'">
-                    <input type="button" value="-" onclick="display.value += '-'" class="operator">
+                    <input type="button" value="4" onclick="addToDisplay('4'); vibrate();">
+                    <input type="button" value="5" onclick="addToDisplay('5'); vibrate();">
+                    <input type="button" value="6" onclick="addToDisplay('6'); vibrate();">
+                    <input type="button" value="-" onclick="addToDisplay('-'); vibrate();" class="operator">
                 </div>
                 <div class="button-row">
-                    <input type="button" value="1" onclick="display.value += '1'">
-                    <input type="button" value="2" onclick="display.value += '2'">
-                    <input type="button" value="3" onclick="display.value += '3'">
-                    <input type="button" value="+" onclick="display.value += '+'" class="operator">
+                    <input type="button" value="1" onclick="addToDisplay('1'); vibrate();">
+                    <input type="button" value="2" onclick="addToDisplay('2'); vibrate();">
+                    <input type="button" value="3" onclick="addToDisplay('3'); vibrate();">
+                    <input type="button" value="+" onclick="addToDisplay('+'); vibrate();" class="operator">
                 </div>
                 <div class="button-row">
-                    <input type="button" value="00" onclick="display.value += '00'">
-                    <input type="button" value="0" onclick="display.value += '0'">
-                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+                    <input type="button" value="00" onclick="addToDisplay('00'); vibrate();">
+                    <input type="button" value="0" onclick="addToDisplay('0'); vibrate();">
+                    <input type="button" value="=" onclick="calculate(); vibrate();" class="equal operator">
                 </div>
             </form>
         </div>
