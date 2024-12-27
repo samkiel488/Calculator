@@ -1,6 +1,6 @@
 function vibrate() {
     if (navigator.vibrate) {
-        navigator.vibrate(50); // Vibrate for 50 milliseconds
+        navigator.vibrate(70); // Vibrate for 50 milliseconds
     }
 }
 
