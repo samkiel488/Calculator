@@ -110,8 +110,8 @@ form input.equal {
 }
 
 form input.operator {
-    color: black;
-    background-color: turquoise; 
+    color: white;
+    background-color: none; 
 }
 
 footer {
