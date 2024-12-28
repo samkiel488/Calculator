@@ -36,7 +36,7 @@ function copyText() {
 
     // Copy the text to the clipboard
     navigator.clipboard.writeText(inputField.value).then(() => {
-        alert('Answer copied to clipboard! \n Tha ks for using ѕαмкιєℓ.∂єν - Calculator');
+        alert('Answer copied to clipboard!\nThanks for using ѕαмкιєℓ.∂єν - Calculator');
     }).catch(err => {
         console.error('Failed to copy text: ', err);
     });
