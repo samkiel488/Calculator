@@ -22,8 +22,7 @@
         <div class="calculator">
             <form>
                 <div class="display">
-                    <input type="text" name="display" readonly>
-                </div>
+                    <input type="text" id="display" name="display" readonly value="" onclick="copyText()">    </div>
                 <div class="button-row">
                     <input type="button" value="AC" onclick="clearDisplay(); vibrate();" class="operator">
                     <input type="button" value="DEL" onclick="deleteLast(); vibrate();" class="operator">

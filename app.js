@@ -1,6 +1,6 @@
 function vibrate() {
     if (navigator.vibrate) {
-        navigator.vibrate(70); // Vibrate for 50 milliseconds
+        navigator.vibrate(100); // Vibrate for 50 milliseconds
     }
 }
 
@@ -26,3 +26,19 @@ function calculate() {
         display.value = 'Error';
     }
 }
+
+function copyText() {
+    const inputField = document.getElementById('display');
+
+    // Select the text inside the input
+    inputField.select();
+    inputField.setSelectionRange(0, 99999); // For mobile devices
+
+    // Copy the text to the clipboard
+    navigator.clipboard.writeText(inputField.value).then(() => {
+        alert('Text copied to clipboard!');
+    }).catch(err => {
+        console.error('Failed to copy text: ', err);
+    });
+}
+
