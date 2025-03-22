@@ -4,6 +4,8 @@ body {
     margin: auto;
     color: wheat;
     text-align: center;
+    display: flex;
+    justify-content: center;
     overflow: auto;
     font-weight: bold;
     font-family: Courier new, Monospace; /* Changed to a more common font */
@@ -56,13 +58,15 @@ marquee {
 .calculator {
     background-color: #304452;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
     padding: 10px;
     width: 100%; /* Make calculator take full width of container */
 }
 
 .calculator form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column; /* Stack display and buttons vertically */
 }
 
