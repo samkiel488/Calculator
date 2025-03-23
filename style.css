@@ -1,19 +1,14 @@
 body {
-    position: relative;
-    height: 100vh;
-    margin: auto;
-    color: wheat;
-    text-align: center;
-    overflow: auto;
-    font-weight: bold;
-    font-family: Courier new, Monospace;
+position: relative;
+margin: 0;
+color: blue;
+text-align: center;
+overflow: auto;
+font-weight: bold;
+font: optional;
 }
 
-a {
-    color: wheat;
-}
-
-body::before {
+body::before{
     content: "";
     position: fixed;
     top: 0;
@@ -27,82 +22,55 @@ body::before {
     z-index: -1;
 }
 
-p {
-    font-size: 23px;
-    margin-bottom: -20px;
-    margin-top: 2px;
-}
 
 marquee {
-    color: whitesmoke;
+    color: azure;
     font: optional;
-    margin-bottom: -20px;
-    margin-top: -50px;
 }
 
-.container {
+.container{
     border-radius: 10px;
     display: flex;
-    width: 90%;
-    max-width: 400px;
-    height: auto;
+    margin: auto;
+    width: 50%;
+    height: 100vh;
     flex-direction: column;
     font-family: Poppins, sans-serif;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 .calculator {
     background-color: #304452;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
-}
-
-.calculator form {
-    display: flex;
-    flex-direction: column;
-}
-
-.display {
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-}
-
-.display input {
-    text-align: right;
-    flex: 1;
-    font-size: 95px;
-    box-shadow: 0;
-    height: 70px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-.button-row {
-    display: flex;
-    justify-content: center;
 }
 
 .calculator form input {
     border: 0;
     outline: 0;
-    width: 70px;
-    height: 70px;
+    width: 68px;
+    height: 68px;
     border-radius: 10px;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
     background: transparent;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     cursor: pointer;
-    margin: 5px;
-    transition: background 0.3s;
+    margin: 10px;
 }
 
-.calculator form input:hover {
-    background: rgba(255, 255, 255, 0.5);
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+} 
+
+form .display input {
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: 0;
 }
 
 form input.equal {
@@ -110,21 +78,15 @@ form input.equal {
 }
 
 form input.operator {
-    color: white;
-    background-color: none;
+    color: #33ffd8;
 }
 
-footer {
-    margin-top: 20px;
-    padding-top: 10px;
-    margin-bottom: 30px;
+footer{
+    position: relative;
     bottom: 0;
-    width: 100%;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-family: 'Courier New', Courier, monospace; 
-    text-align: center; 
+    font-size: 20px;
+    font-family: cursive;
 }
+
